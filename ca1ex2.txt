@@ -1,0 +1,23 @@
+git init
+git branch -m master main
+git add .
+git status
+git commit -m "added files"
+git checkout feature-login
+git branch feature-login
+git checkout feature-login
+git commit -m "updated py"
+git add app.py
+git commit -m "updated py"
+git checkout main
+git add app.py
+git commit -m "updated py in main"
+git merge feature-login
+git status
+git add app.py
+git status
+git commit -m "merge complete"
+git status
+git remote add origin https://github.com/X00227989/ca1ex2-repo
+git push -u origin main
+git pull
